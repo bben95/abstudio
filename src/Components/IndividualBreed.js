@@ -11,11 +11,10 @@ const IndividualBreed = ({ breed, open, handleClose }) => {
 				return response;
 			})
 			.then((data) => {
-				console.log(data);
 				setSubBreeds(data.message);
 			})
 			.catch((e) => console.log(e));
-	}, []);
+	}, [breed]);
 	return (
 		<Dialog
 			open={open}

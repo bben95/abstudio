@@ -10,8 +10,6 @@ import {
 import React, { useEffect, useState } from "react";
 import ImageCard from "../Components/ImageCard";
 import CustomSearchDialog from "../Components/CustomSearchDialog";
-import SubBrandImageCard from "../Components/SubBrandImageCard";
-import IndividualBreed from "../Components/IndividualBreed";
 
 const Home = () => {
 	const [breed, setBreed] = useState({});
