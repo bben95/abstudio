@@ -55,8 +55,10 @@ const CustomSearchDialog = ({ breeds, open, handleClose }) => {
 						value={selectedBreed}
 						sx={{ width: "150px" }}
 					>
-						{breeds.map((breed) => (
-							<MenuItem value={breed}>{breed}</MenuItem>
+						{breeds.map((breed, id) => (
+							<MenuItem key={id} value={breed}>
+								{breed}
+							</MenuItem>
 						))}
 					</Select>
 				</FormControl>
@@ -90,7 +92,11 @@ const CustomSearchDialog = ({ breeds, open, handleClose }) => {
 						justifyContent="center"
 						key={id}
 					>
-						<img style={{ width: "120px", height: "120px" }} src={image} />
+						<img
+							style={{ width: "120px", height: "120px" }}
+							src={image}
+							alt={image}
+						/>
 					</Stack>
 				))}
 			</Stack>

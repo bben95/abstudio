@@ -30,6 +30,7 @@ const ImageCard = ({ name }) => {
 				<img
 					style={{ width: "120px", height: "120px" }}
 					src={image ? image : ""}
+					alt={image}
 				/>
 				<Typography>{name}</Typography>
 			</Stack>

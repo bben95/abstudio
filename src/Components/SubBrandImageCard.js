@@ -20,6 +20,7 @@ const SubBrandImageCard = ({ breed, subBreed }) => {
 			<img
 				style={{ width: "120px", height: "120px" }}
 				src={image ? image : ""}
+				alt={image}
 			/>
 			<Typography>{subBreed}</Typography>
 		</Stack>
